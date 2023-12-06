@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Dosen</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </b>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" role="button">LogOut </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="../dist/img/logo-footer.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">POLITEKNIK JAMBI </span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Nama Dosen</a>
+        </div>
+      </div>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="dashboard-dosen.html" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Home
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="profile-dosen.html" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Profil
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Form
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="form-dosen/p-pendidikan-mp.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pelaksanaan Pendidikan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="form-dosen/p-penelitian.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>pelaksanaan Penelitian</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="form-dosen/p-penelitian.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pelaksanaan Penelitian</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="form-dosen/p-pengabdian.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pengabdian</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="form-dosen/unsur-penunjang.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Unsur Penunjang</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Tabel Data
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pencarian-AK.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data Kinerja</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="tb-skp.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                    SKP
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="tb-skp.html" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>Data</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-file"></i>
+              <p>
+                Laporan
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Form Data Dosen</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v2</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container">
+        <div class="container-fluid">
+          <form>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card"  style="background-color: yellow;">
+                  <div class="card-header">
+                    <h4>PELAKSANAAN PENDIDIKAN</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">1. Melaksanakan Perkuliahan</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <p style="color: red;">
+                      Note: asumsi jumlah tatap muka masing-masing dosen sama
+                    </p>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 10px">No</th>
+                          <th style="width: 80px">Tahun Ajar</th>
+                          <th style="width: 10px">Semester</th>
+                          <th style="width: 180px">Matakuliah</th>
+                          <th style="width: 10px">SKS</th>
+                          <th style="width: 10px">Jumlah Kelas</th>
+                          <th style="width: 10px">Jumlah Dosen Pengampu</th>
+                          <th style="width: 10px">Total SKS/Semester</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1.</td>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">Ganjil</option>
+                              <option>Genap</option>                           
+                            </select>
+                          </td>
+                          <td><input type="text" class="form-control" name=""></td>
+                          <td><input type="number" class="form-control" name=""></td>
+                          <td><input type="number" class="form-control" name=""></td>
+                          <td><input type="number" class="form-control" name=""></td>                          
+                          <td  style="background-color: #c7c6c1;">= total</td>
+                        </tr>
+                        <tr>
+                          <td>2.</td>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">Ganjil</option>
+                              <option>Genap</option>                           
+                            </select>
+                          </td>
+                          <td><input type="text" class="form-control" name=""></td>
+                          <td><input type="number" class="form-control" name=""></td>
+                          <td><input type="number" class="form-control" name=""></td>
+                          <td><input type="number" class="form-control" name=""></td>                          
+                          <td  style="background-color: #c7c6c1;">= total</td>
+                        </tr>
+                        <tr>
+                          <td>3.</td>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">Ganjil</option>
+                              <option>Genap</option>                           
+                            </select>
+                          </td>
+                          <td><input type="text" class="form-control" name=""></td>
+                          <td><input type="number" class="form-control" name=""></td>
+                          <td><input type="number" class="form-control" name=""></td>
+                          <td><input type="number" class="form-control" name=""></td>                          
+                          <td style="background-color: #c7c6c1;">= total</td>
+                        </tr>
+
+                        <!-- ini penjumlahannya -->
+                        <tr>
+                          <th colspan="4">Jumlah</th>
+                          <td style="background-color: #c7c6c1;">= total</td>
+                          <td></td>
+                          <td></td>                          
+                          <td style="background-color: #c7c6c1;">= total</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <label>File Pendukung</label>
+                      <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                    <table class="tabel col-sm-6" border="0">
+                      <tr>
+                        <!-- ini ganjil -->
+                        <th class="col-4">Jumlah SKS Ganjil</th>
+                        <th>:</th>
+                        <td class="col-1">=</td>
+                        <td></td>
+                        <!-- ini genap -->
+                        <th class="col-4">Jumlah SKS Genap</th>
+                        <th>:</th>
+                        <td class="col-1">=</td>
+                      </tr>
+                      <tr>
+                        <!-- ini ganjil -->
+                        <th class="col-4">Jumlah SKS ganjil </th>
+                        <th>:</th>
+                        <td class="col-1">=</td>
+                        <td></td>
+                        <!-- ini genap -->
+                        <th class="col-4">Jumlah SKS Genap </th>
+                        <th>:</th>
+                        <td class="col-1">=</td>
+                      </tr>               
+                    </table>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div>
+
+              <!-- Membimbing Mahasiswa Seminar -->
+              <div class="col-md-8">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">2. Membimbing Mahasiswa Seminar</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <p style="color: red;">Note: isi angka 1 jika melaksanakan pada semester tersebut</p>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 20px">Tahun Ajar</th>
+                          <th style="width: 20px">Semester</th>                          
+                          <th style="width: 10px">Pelaksanaan</th>
+                          <th style="width: 10px">AK</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td>Ganjil</td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">1*pelaksanaan</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td>Genap</td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">1*pelaksanaan</td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" style="text-align: center;">Jumlah</td>
+                          <td style="background-color: #c7c6c1;">= jumlah</td>
+                          <td style="background-color: #c7c6c1;">= jumlah</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <label>File Pendukung</label>
+                        <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+
+              <!-- Membimbing mahasiswa kuliah kerja nyata, praktik kerja nyata, praktik kerja lapangan -->
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">3. Membimbing mahasiswa kuliah kerja nyata, praktik kerja nyata, praktik kerja lapangan</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <p style="color: red;">Note: isi angka 1 jika melaksanakan pada semester tersebut</p>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 20px">Jenis Prakrik</th>
+                          <th style="width: 20px">Tahun Ajar</th>
+                          <th style="width: 20px">Ganjil</th>                          
+                          <th style="width: 10px">Genap</th>
+                          <th style="width: 10px">Jumlah</th>
+                          <th style="width: 10px">AK</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>KKN</td>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;" style="background-color: #c7c6c1;">=Ganjil + Genap</td>
+                          <td style="background-color: #c7c6c1;" style="background-color: #c7c6c1;">=0</td>
+                        </tr>
+                        <tr>
+                          <td>PKN</td>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">=Ganjil + Genap</td>
+                          <td style="background-color: #c7c6c1;">=0</td>
+                        </tr>
+                        <tr>
+                          <td>PKL</td>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">=Ganjil + Genap</td>
+                          <td style="background-color: #c7c6c1;">=0</td>
+                        </tr>
+                        <tr>
+                          <th colspan="4" style="text-align: center;">Jumlah</th>
+                          <td style="background-color: #c7c6c1;">= jumlah</td>
+                          <td style="background-color: #c7c6c1;">= jumlah</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <label>File Pendukung</label>
+                        <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+              <!-- Membimbing Proyek Akhir -->
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">4. Membimbing Proyek Akhir</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th rowspan="2" style="width: 80px">Tahun Ajar</th>
+                          <th rowspan="2" style="width: 10px;">Semester</th>
+                          <th rowspan="2" style="text-align: center; width: 40px;">Nama Mahasiswa</th>
+                          <th colspan="2" style="text-align: center; width: 20px;">Pembimbing</th>
+                          <th rowspan="2" style="text-align: center; width:5px;">jumlah pembimbing pembantu</th>
+                          <th colspan="2" style="text-align: center; width: 20px;">AK</th>
+                          <tr>
+                            <th style="text-align: center; width: 5px;">utama</th>
+                            <th style="text-align: center; width: 5px;">pendamping</th>
+                            <th style="text-align: center; width: 5px;">P. Utama (1)</th>
+                            <th style="text-align: center; width: 5px;">P. Pendamping (0.5)</th> 
+                          </tr>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td rowspan="2">
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td rowspan="2">Ganjil</td>
+                          <td><input type="text" class="form-control" placeholder="Michael, Exel" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control" placeholder="Michael, Exel" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td rowspan="2">Genap</td>
+                          <td><input type="text" class="form-control" placeholder="Michael, Exel" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control" placeholder="Michael, Exel" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                        </tr>
+                        <tr>
+                          <th colspan="3">Jumlah</th>
+                          <td style="background-color: #c7c6c1;">=</td>
+                          <td style="background-color: #c7c6c1;">=</td>
+                          <td></td>
+                          <td style="background-color: #c7c6c1;">=</td>
+                          <td style="background-color: #c7c6c1;">=</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                    <label>File Pendukung</label>
+                        <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+              <!-- Bertugas sebagai penguji pada ujian akhir -->
+              <div class="col-md-12">
+                <div class="card ">
+                  <div class="card-header">
+                    <h3 class="card-title">5. Bertugas sebagai penguji pada ujian akhir</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th rowspan="2" style="width: 80px">Tahun Ajar</th>
+                          <th rowspan="2" style="width: 10px;">Semester</th>
+                          <th rowspan="2" style="text-align: center; width: 40px;">Nama Mahasiswa</th>
+                          <th colspan="2" style="text-align: center; width: 20px;">Penguji</th>
+                          <th rowspan="2" style="text-align: center; width:5px;">Jumlah Anggota Penguji</th>
+                          <th colspan="2" style="text-align: center; width: 20px;">AK</th>
+                          <tr>
+                            <th style="text-align: center; width: 5px;">Ketua</th>
+                            <th style="text-align: center; width: 5px;">Anggota</th>
+                            <th style="text-align: center; width: 5px;">Ketua (1)</th>
+                            <th style="text-align: center; width: 5px;">Anggota (0.5)</th> 
+                          </tr>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td rowspan="2">
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td rowspan="2">Ganjil</td>
+                          <td><input type="text" class="form-control" placeholder="Michael, Exel" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control" placeholder="Michael, Exel" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                        </tr>
+                        <tr>
+                          <td rowspan="2">
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td rowspan="2">Genap</td>
+                          <td><input type="text" class="form-control" placeholder="Michael, Exel" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" class="form-control" placeholder="Michael, Exel" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                          <td style="background-color: #c7c6c1;">null</td>
+                        </tr>
+                        <tr>
+                          <th colspan="3">Jumlah</th>
+                          <td style="background-color: #c7c6c1;">=</td>
+                          <td style="background-color: #c7c6c1;">=</td>
+                          <td></td>
+                          <td style="background-color: #c7c6c1;">=</td>
+                          <td style="background-color: #c7c6c1;">=</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                    <label>File Pendukung</label>
+                      <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+                
+              <!-- Membina kegiatan kemahasiswaan di bidang akademik dan kemahasiswaan -->
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">6. Membina kegiatan kemahasiswaan di bidang akademik dan kemahasiswaan</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <p>(sebagai dosen wali, sebagai dosen pembimbing organisasi kegiatan mahasiswa, dll)</p>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 20px"></th>
+                          <th style="width: 20px">Tahun Ajar</th>
+                          <th style="width: 20px">Ganjil</th>                          
+                          <th style="width: 10px">Genap</th>
+                          <th style="width: 10px">Jumlah AK</th>
+                          <th style="width: 10px">AK(2/Sem)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Sebagai Dosen Pembimbing Akademik</td>
+                          <td>
+                            <select name="" class="form-control select2">
+                              <option selected="selected">2022</option>
+                              <option>2023</option>
+                              <option>2024</option>                              
+                            </select>
+                          </td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td style="background-color: #c7c6c1;">=Ganjil + Genap</td>
+                          <td style="background-color: #c7c6c1;">= jumlah * 2</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <label>File Pendukung</label>
+                        <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">7. Mengembangkan Bahan Kuliah</h3>
+                  </div>
+                  <!-- ./card-header -->
+                  <div class="card-body">
+                    <label>Tahun Ajar</label>
+                    <select name="" class="form-control select2 col-md-1">
+                      <option selected="selected">2022</option>
+                      <option>2023</option>
+                      <option>2024</option>                              
+                    </select><br>
+                    <table class="table table-bordered">
+                      <tbody>
+                        <tr data-widget="expandable-table" aria-expanded="false">
+                          <td>
+                            <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                            Ganjil
+                          </td>
+                        </tr>
+                        <tr class="expandable-body">
+                          <td>
+                            <div class="">
+                              <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th style="width: 20px">Jenis Bahan Kuliah</th>
+                                    <th style="width: 20px">Jumlah</th>                          
+                                    <th style="width: 10px">AK/Bahan Kuliah</th>
+                                    <th style="width: 10px">Jumlah AK</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Buku Ajar</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td style="background-color: #c7c6c1;">20</td>
+                                    <td style="background-color: #c7c6c1;">=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Diklat</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td style="background-color: #c7c6c1;"5></td>
+                                    <td style="background-color: #c7c6c1;">=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Modul</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td style="background-color: #c7c6c1;">5</td>
+                                    <td style="background-color: #c7c6c1;">=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Petunjuk Praktikum</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td style="background-color: #c7c6c1;">5</td>
+                                    <td style="background-color: #c7c6c1;">=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Model</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td style="background-color: #c7c6c1;">5</td>
+                                    <td style="background-color: #c7c6c1;">=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Alat Bantu</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td style="background-color: #c7c6c1;">5</td>
+                                    <td style="background-color: #c7c6c1;">=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Audio Visual</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td style="background-color: #c7c6c1;">5</td>
+                                    <td style="background-color: #c7c6c1;">=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Naskah Tutorial</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td style="background-color: #c7c6c1;">5</td>
+                                    <td style="background-color: #c7c6c1;">=Jumlah * AK</td>
+                                  </tr> 
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-widget="expandable-table" aria-expanded="false">
+                          <td>
+                            <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                            Genap
+                          </td>
+                        </tr>
+                        <tr class="expandable-body">
+                          <td>
+                            <div class="">
+                              <table class="table table-bordered">
+                                <thead>
+                                  <tr data-widget="expandable-table" aria-expanded="false">
+                                    <th style="width: 20px">Jenis Bahan Kuliah</th>
+                                    <th style="width: 20px">Jumlah</th>                          
+                                    <th style="width: 10px">AK/Bahan Kuliah</th>
+                                    <th style="width: 10px">Jumlah AK</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Buku Ajar</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>20</td>
+                                    <td>=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Diklat</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>5</td>
+                                    <td>=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Modul</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>5</td>
+                                    <td>=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Petunjuk Praktikum</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>5</td>
+                                    <td>=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Model</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>5</td>
+                                    <td>=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Alat Bantu</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>5</td>
+                                    <td>=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Audio Visual</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>5</td>
+                                    <td>=Jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Naskah Tutorial</td>
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>5</td>
+                                    <td>=Jumlah * AK</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <label>File Pendukung</label>
+                    <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="card"  style="background-color: yellow;">
+                  <div class="card-header">
+                    <h4>PELAKSANAAN PENELITIAN</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Menghasilkan Karya Ilmiah -->
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">1. Menghasilkan Karya Ilmiah</h3>
+                  </div>
+                  <!-- ./card-header -->
+                  <div class="card-body">
+                    <label>Tahun Ajar</label>
+                    <select name="" class="form-control select2 col-md-1">
+                      <option selected="selected">2022</option>
+                      <option>2023</option>
+                      <option>2024</option>                              
+                    </select><br>
+                    <table class="table table-bordered">
+                      <tbody>
+                        <tr data-widget="expandable-table" aria-expanded="false">
+                          <td>
+                            <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                            Ganjil
+                          </td>
+                        </tr>
+                        <tr class="expandable-body">
+                          <td>
+                            <div class="">
+                              <table class="table table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th style="width: 20px">Jenis Karya Ilmiah</th>
+                                    <th style="width: 20px">Jumlah</th>
+                                    <th style="width: 20px">AK/Karya Ilmiah</th>
+                                    <th style="width: 10px">Jumlah AK</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Monograf</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>20</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Buku referensi</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>40</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Artikel di jurnal ilmiah internasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>40</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Artikel di jurnal ilmiah nasional terakreditasi</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>25</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Artikel di jurnal ilmiah nasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>10</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Makalah disajikan di seminar internasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>15</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Makalah disajikan di seminar nasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>10</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Poster internasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>10</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Poster nasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>5</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Artikel di majalah/koran</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>1</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Jumlah</th>                          
+                                    <td>=</td>
+                                    <td></td>
+                                    <td>=</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr data-widget="expandable-table" aria-expanded="false">
+                          <td>
+                            <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                            Genap
+                          </td>
+                        </tr>
+                        <tr class="expandable-body">
+                          <td>
+                            <div class="">
+                              <table class="table table-bordered">
+                                <thead>
+                                  <tr data-widget="expandable-table" aria-expanded="false">
+                                    <th style="width: 20px">Jenis Bahan Kuliah</th>
+                                    <th style="width: 20px">Jumlah</th>                          
+                                    <th style="width: 10px">AK/Bahan Kuliah</th>
+                                    <th style="width: 10px">Jumlah AK</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Monograf</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>20</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Buku referensi</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>40</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Artikel di jurnal ilmiah internasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>40</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Artikel di jurnal ilmiah nasional terakreditasi</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>25</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Artikel di jurnal ilmiah nasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>10</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Makalah disajikan di seminar internasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>15</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Makalah disajikan di seminar nasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>10</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Poster internasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>10</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Poster nasional</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>5</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Artikel di majalah/koran</td>                          
+                                    <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                                    <td>1</td>
+                                    <td>= jumlah * AK</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Jumlah</th>                          
+                                    <td>=</td>
+                                    <td></td>
+                                    <td>=</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <label>File Pendukung</label>
+                    <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="card"  style="background-color: yellow;">
+                  <div class="card-header">
+                    <h4>PELAKSANAAN PENGABDIAN KEPADA MASYARAKAT</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Memberikan pelatihan/penyuluhan/penataran/ceramah pada masyarakat -->
+              <div class=" col-md-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">1. Memberikan pelatihan/penyuluhan/penataran/ceramah pada masyarakat</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 20px">Jenis</th>
+                          <th style="width: 20px">Jumlah Program</th>
+                          <th style="width: 20px">AK/Prog</th>
+                          <th style="width: 10px">Jumlah AK</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th colspan="4">Satu semester atau lebih</th>
+                        </tr>
+                        <tr>
+                          <td>Tingkat internasional</td>                          
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td>4</td>
+                          <td>= jumlah * AK</td>
+                        </tr>
+                        <tr>
+                          <td>Tingkat nasional</td>                          
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td>3</td>
+                          <td>= jumlah * AK</td>
+                        </tr>
+                        <tr>
+                          <td>Tingkat lokal</td>                          
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td>2</td>
+                          <td>= jumlah * AK</td>
+                        </tr>
+                        <tr>
+                          <th colspan="4">Kuran dari 1 semester atau minimal 1 bulan</th>
+                        </tr>
+                        <tr>
+                          <td>Tingkat internasional</td>                          
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td>3</td>
+                          <td>= jumlah * AK</td>
+                        </tr>
+                        <tr>
+                          <td>Tingkat nasional</td>                          
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td>2</td>
+                          <td>= jumlah * AK</td>
+                        </tr>
+                        <tr>
+                          <td>Tingkat lokal</td>                          
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td>1</td>
+                          <td>= jumlah * AK</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4"></td>
+                        </tr>
+                        <tr>
+                          <td>Isidental</td>                          
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td>1</td>
+                          <td>= jumlah * AK</td>
+                        </tr>
+                        <tr>
+                          <th>Jumlah</th>                          
+                          <td>=</td>
+                          <td></td>
+                          <td>=</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <label>File Pendukung</label>
+                        <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+              <div class="col-md-12">
+                <div class="card"  style="background-color: yellow;">
+                  <div class="card-header">
+                    <h4>USUR PENUNJANG</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="card ">
+                  <div class="card-header">
+                    <h3 class="card-title">Unsur Penunjang</h3>
+                  </div>
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <select name="" class="form-control select2 col-md-1">
+                      <option selected="selected">2022</option>
+                      <option>2023</option>
+                      <option>2024</option>                              
+                    </select><br>
+                    <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 2px;">Semester</th>
+                          <th style="text-align: center; width: 40px;">Jabatan Struktural</th>
+                          <th style="text-align: center; width: 20px;">Jumlah</th>
+                          <th style="text-align: center; width:5px;">AK/Sem</th>
+                          <th style="text-align: center; width: 20px;">Jumlah AK</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Ganjil</td>
+                          <td><input type="text" class="form-control" placeholder="Ketua Prodi Teknk Listrik" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td>=Jumlah*AK</td>
+                        </tr>
+                        <tr>
+                          <td>Genap</td>
+                          <td><input type="text" class="form-control" placeholder="Ketua Prodi Teknk Listrik" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td><input type="number" class="form-control" placeholder="jumlah" name=""></td>
+                          <td>=Jumlah*AK</td>
+                      </tbody>
+                    </table>
+                    </div>
+                    <label>File Pendukung</label>
+                      <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </div>
+
+            </div>
+
+            <a href="pencarian-AK.html" class="col-md-1 btn btn-success btn-block mx-auto"><b>Simpan</b></a>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+</body>
+</html>

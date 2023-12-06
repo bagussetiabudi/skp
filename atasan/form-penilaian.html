@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="../../index3.html" class="nav-link">Home</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="../dist/img/logo-footer.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">POLITEKNIK JAMBI </span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Nama Dosen</a>
+        </div>
+      </div>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="dashboard-atasan.html" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Home
+              </p>
+            </a>
+          </li>
+          <li class="nav-item menu-open">
+            <a href="tb-data.html" class="nav-link active">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Data kinerja
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-sign-out-alt"></i>
+              <p>
+                Log Out
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Data Kinerja</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <div class="btn-group">
+                <a href="data-penilaian.html" type="button" class="btn btn-warning">Back</a>
+                <a href="data-penilaian.html" type="button" class="btn btn-info">Simpan</a>
+              </div>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table border="1" cellpadding="5" cellspacing="0" width="100%">
+					<thead>
+						<div class="container d-flex align-items-center justify-content-center center-img">
+							<img width="100" style="align-items: center;" src="../dist/img/logo-footer.png">
+						</div>
+						<h3 style="text-align: center;">PENILAIAN PRESTASI KERJA<br>PEGAWAI POLITEKNIK JAMBI</h3>
+						<div class="row">
+							<div class="col-sm-6">
+								<p style="vertical-align: bottom;">POLITEKNIK JAMBI</p>
+							</div>
+							<div class="col-sm-6">
+								<p>JANGKA WAKTU PENILAIAN <br> BULAN: Oktober s/d 31 September 2022</p>
+							</div>
+						</div>						
+						<!-- ini yang di nilai -->
+						<tr>
+							<th rowspan="6">1</th>
+							<th colspan="4">YANG DINILAI</th>
+						</tr>
+						<tr>
+							<td colspan="2">a. Nama</td>
+							<td colspan="2">Tanto M. Kom</td>
+						</tr>
+						<tr>
+							<td colspan="2">b. NIP</td>
+							<td colspan="2">1234567890</td>
+						</tr>
+						<tr>
+							<td colspan="2">c. Pangkat, Golongan ruang, TMT</td>
+							<td colspan="2">Penata Muda TK.1 / III B</td>
+						</tr>
+						<tr>
+							<td colspan="2">d. Jabatan/Pekerjaan</td>
+							<td colspan="2">Asisten Ahli</td>
+						</tr>
+						<tr>
+							<td colspan="2">e. Unit Organisasi</td>
+							<td colspan="2">TRPL</td>
+						</tr>
+
+						<!-- ini yang menilai -->
+						<tr>
+							<th rowspan="6">2</th>
+							<th colspan="4">PEJABAT PENILAI</th>
+						</tr>
+						<tr>
+							<td colspan="2">a. Nama</td>
+							<td colspan="2">Sepdian S.T, M.T</td>
+						</tr>
+						<tr>
+							<td colspan="2">b. NIP</td>
+							<td colspan="2">1234567890</td>
+						</tr>
+						<tr>
+							<td colspan="2">c. Pangkat, Golongan ruang, TMT</td>
+							<td colspan="2">Penata Muda TK.1 / III B</td>
+						</tr>
+						<tr>
+							<td colspan="2">d. Jabatan/Pekerjaan</td>
+							<td colspan="2">Wakil Direktur Bidang Akademik</td>
+						</tr>
+						<tr>
+							<td colspan="2">e. Unit Organisasi</td>
+							<td colspan="2">Bidang Akademik</td>
+						</tr>
+
+						<!-- ATASAN PEJABAT PENILAI -->
+						<tr>
+							<th rowspan="6">3</th>
+							<th colspan="4">ATASAN PEJABAT PENILAI</th>
+						</tr>
+						<tr>
+							<td colspan="2">a. Nama</td>
+							<td colspan="2">Ir. Hilda Porawati, MT</td>
+						</tr>
+						<tr>
+							<td colspan="2">b. NIP</td>
+							<td colspan="2">1050060101</td>
+						</tr>
+						<tr>
+							<td colspan="2">c. Pangkat, Golongan ruang, TMT</td>
+							<td colspan="2">Penata Tk.I Muda Gol. III/b</td>
+						</tr>
+						<tr>
+							<td colspan="2">d. Jabatan/Pekerjaan</td>
+							<td colspan="2">DIrektur</td>
+						</tr>
+						<tr>
+							<td colspan="2">e. Unit Organisasi</td>
+							<td colspan="2">Politeknik Jambi</td>
+						</tr>
+					</thead>
+				</table>
+				<br>
+				<table border="1" cellpadding="5" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<th colspan="4">UNSUR YANG DINILAI</th>
+							<th>Jumlah</th>
+						</tr>
+						<tr>
+							<th colspan="2">Sasaran Kerja Pegawai</th>
+							<td><input type="text" class="form-control"></td>
+							<td>x 60%</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<th rowspan="10">Kerja Pegawai</th>
+							<tr>
+								<td>Orientasi Pelayanan</td>
+								<td><input type="text" class="form-control"></td>
+								<td>Buruk</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Integritas</td>
+								<td><input type="text" class="form-control"></td>
+								<td>Buruk</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Komitmen</td>
+								<td><input type="text" class="form-control"></td>
+								<td>Buruk</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Disiplin</td>
+								<td><input type="text" class="form-control"></td>
+								<td>Buruk</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Kerjasama</td>
+								<td><input type="text" class="form-control"></td>
+								<td>Buruk</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Kepemimpinan</td>
+								<td><input type="text" class="form-control"></td>
+								<td>Buruk</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Jumlah</td>
+								<td>0</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Nilai Rata-Rata</td>
+								<td>0</td>
+								<td>Buruk</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>Nilai Perilaku Kerja</th>
+								<td><input type="text" class="form-control"></td>
+								<td>x 40%</td>
+								<td>0</td>
+							</tr>
+						</tr>
+						<tr>
+							<th colspan="4" rowspan="2">NILAI PRESTASI KERJA</th>
+							<td>=sum</td>
+							<tr>
+								<td>Buruk</td>
+							</tr>
+						</tr>
+						<tr>
+							<th colspan="5">KEBERATAN DARI PAGAWAI/DOSEN YANG DINILAI (APABILA ADA)</th>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<p>.......</p>
+								<br>
+								<br>
+								<br>
+								<p style="text-align: center;">Tanggal,.......</p>
+							</td>
+						</tr>
+					</thead>
+				</table>
+				<br>
+				<table border="1" cellpadding="5" cellspacing="0" width="100%" style="height: 500px;">
+					<thead>
+						<tr>
+							<th colspan="5">TANGGAPAN ATASAN PEJABAT PENILAI ATAS KEBERATAN</th>
+						</tr>
+						<tr style="height: 200px;">
+							<td colspan="5">
+								<p>.......</p>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br> 		
+								<br>
+								<br>
+								<p style="text-align: center;">Tanggal,.......</p>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="5">KEPUTUSAN ATASAN PEJABAT PENILAI ATAS KEBERATAN</th>
+						</tr>
+						<tr style="height: 300px;">
+							<td colspan="5">
+								<p>.......</p>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<p style="text-align: center;">Tanggal,.......</p>
+							</td>
+						</tr>
+					</thead>
+				</table>
+				<br>
+				<table border="1" cellpadding="5" cellspacing="0" width="100%" style="height: 500px;">
+					<thead>
+						<tr>
+							<th colspan="5">TANGGAPAN ATASAN PEJABAT PENILAI ATAS KEBERATAN</th>
+						</tr>
+						<tr style="height: 200px;">
+							<td colspan="5">
+								<p>.......</p>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br> 		
+								<br>
+								<br>
+								<p style="text-align: center;">Tanggal,.......</p>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="5">KEPUTUSAN ATASAN PEJABAT PENILAI ATAS KEBERATAN</th>
+						</tr>
+						<tr style="height: 300px;">
+							<td colspan="5">
+								<p>.......</p>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<br>
+								<p style="text-align: center;">Tanggal,.......</p>
+							</td>
+						</tr>
+					</thead>
+				</table>
+				<br>
+				<table border="1" cellpadding="5" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<th colspan="5">REKOMENDASI</th>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<p>.......</p>
+								<br>
+								<br>
+								<br>
+							</td>
+						</tr>
+					</thead>
+				</table>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-sm-5 mb-3"></div>
+					<div class="col-sm-6 mb-3" align="center">
+						<p class="kanan">DIBUAT TANGGAL, .......<br>
+						PEJABAT PENILAI</p>
+						<br>
+						<br>
+						<p class="kanan">Nama Lengkap<br>
+						Nik:</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1 mb-3"></div>
+					<div class="col-sm-6 mb-3" align="center">
+						<p class="kiri">DIBUAT TANGGAL, .......<br>
+						PEJABAT PENILAI</p>
+						<br>
+						<br>
+						<p class="kiri">Nama Lengkap<br>
+						Nik:</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-5 mb-3"></div>
+					<div class="col-sm-6 mb-3" align="center">
+						<p class="kanan">DIBUAT TANGGAL, .......<br>
+						PEJABAT PENILAI</p>
+						<br>
+						<br>
+						<p class="kanan">Ir. H. Hilda Porawati, MT<br>
+						Nik: 1050060101</p>
+					</div>
+				</div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+</body>
+</html>

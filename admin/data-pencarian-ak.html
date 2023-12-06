@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Kinerja Dosen</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="dashboard-dosen.html" class="nav-link">Home</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="../dist/img/logo-footer.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">POLITEKNIK JAMBI </span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Nama Dosen</a>
+        </div>
+      </div>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="dashboard-admin.html" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Home
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="data-user.html" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                User
+              </p>
+            </a>
+          </li>
+          <li class="nav-item menu-open">
+            <a href="data-kerja.html" class="nav-link active">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Data
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-sign-out-alt"></i>
+              <p>
+                Log Out
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Data Kinerja</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <div class="btn-group">
+                <a href="data-kerja.html" type="button" class="btn btn-warning">Back</a>
+              </div>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Info boxes -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card card-bordered">
+              <div class="card-header">
+                <table class="table table-sm table-borderless">
+                  <tr>
+                    <th class="col-1">Nama</th>
+                    <td class="col-1 text-colon"><strong>:</strong></td>
+                    <td class="text-bold">Nama dosen</td>
+                  </tr>
+                  <tr>
+                    <th class="col-1">NIK</th>
+                    <td class="col-1 text-colon"><strong>:</strong></td>
+                    <td class="text-bold">NIK dosen</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        	<div class="col-md-12">
+          	<div class="card"  style="background-color: blue;">
+	    		<div class="card-header">
+	      		<h4>PELAKSANAAN PENDIDIKAN</h4>
+	    		</div>
+          	</div>
+        	</div>
+          <div class="col-md-12">
+            <div class="card">
+            	<div class="card-header" style="background-color: yellow;">
+              	<h3 class="card-title">1. Melaksanakan Perkuliahan</h3>
+            	</div>
+             	<!-- /.card-header -->
+              <div class="card-body">
+                <label>Tahun Ajar</label>
+                <p class="form-control col-1">2020</p>
+                <label>Ganjil</label>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="width: 10px">No</th>
+                      <th style="width: 180px">Matakuliah</th>
+                      <th style="width: 10px">SKS</th>
+                      <th style="width: 10px">Jumlah Kelas</th>
+                      <th style="width: 10px">Jumlah Dosen Pengampu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>Basis Data</td>
+                      <td>2</td>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Data Warehouse</td>
+                      <td>2</td>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <label>Genap</label>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="width: 10px">No</th>
+                      <th style="width: 180px">Matakuliah</th>
+                      <th style="width: 10px">SKS</th>
+                      <th style="width: 10px">Jumlah Kelas</th>
+                      <th style="width: 10px">Jumlah Dosen Pengampu</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>Basis Data</td>
+                      <td>2</td>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Data Warehouse</td>
+                      <td>2</td>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <label>File Pendukung</label>
+                  <p class="form-control" name="">Link Google Drive</p>
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+          <!-- /.card -->
+          <!-- Membimbing Mahasiswa Seminar -->
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" style="background-color: yellow;">
+                <h3 class="card-title">2. Membimbing Mahasiswa Seminar</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="width: 20px">Tahun Ajar</th>
+                      <th style="width: 20px">Semester</th>                          
+                      <th style="width: 10px">Pelaksanaan</th>
+                      <th style="width: 10px">AK</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>2022</td>
+                      <td>Ganjil</td>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>2022</td>
+                      <td>Ganjil</td>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <label>File Pendukung</label>
+                  <p class="form-control" name="">Link Google Drive</p>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- Membimbing mahasiswa kuliah kerja nyata, praktik kerja nyata, praktik kerja lapangan -->
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" style="background-color: yellow;">
+                <h3 class="card-title">3. Membimbing mahasiswa kuliah kerja nyata, praktik kerja nyata, praktik kerja lapangan</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="width: 20px">Jenis Prakrik</th>
+                      <th style="width: 20px">Tahun Ajar</th>
+                      <th style="width: 20px">Ganjil</th>                          
+                      <th style="width: 10px">Genap</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>KKN</td>
+                      <td>2022</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>PKN</td>
+                      <td>2022</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>PKL</td>
+                      <td>2022</td>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <label>File Pendukung</label>
+                  <p class="form-control" name="">Link Google Drive</p>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+
+          <!-- Membimbing Proyek Akhir -->
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" style="background-color: yellow;">
+                <h3 class="card-title">4. Membimbing Proyek Akhir</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th rowspan="2" style="width: 80px">Tahun Ajar</th>
+                      <th rowspan="2" style="width: 10px;">Semester</th>
+                      <th rowspan="2" style="text-align: center; width: 40px;">Nama Mahasiswa</th>
+                      <th colspan="2" style="text-align: center; width: 20px;">Pembimbing</th>
+                      <th rowspan="2" style="text-align: center; width:5px;">jumlah pembimbing pembantu</th>
+                      <tr>
+                        <th style="text-align: center; width: 5px;">utama</th>
+                        <th style="text-align: center; width: 5px;">pendamping</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td rowspan="2">2022</td>
+                      <td rowspan="2">Ganjil</td>
+                      <td>Ikbal, Ramadhan</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Iksan</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">2022</td>
+                      <td rowspan="2">Genap</td>
+                      <td>Ikbal, Ramadhan</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Iksan</td>
+                      <td>0</td>
+                      <td>2</td>
+                      <td>2</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+                <label>File Pendukung</label>
+                  <p class="form-control">Link Google Drive</p>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+
+          <!-- Bertugas sebagai penguji pada ujian akhir -->
+          <div class="col-md-12">
+            <div class="card ">
+              <div class="card-header" style="background-color: yellow;">
+                <h3 class="card-title">5. Bertugas sebagai penguji pada ujian akhir</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th rowspan="2" style="width: 80px">Tahun Ajar</th>
+                      <th rowspan="2" style="width: 10px;">Semester</th>
+                      <th rowspan="2" style="text-align: center; width: 40px;">Nama Mahasiswa</th>
+                      <th colspan="2" style="text-align: center; width: 20px;">Penguji</th>
+                      <th rowspan="2" style="text-align: center; width:5px;">Jumlah Anggota Penguji</th>
+                      <tr>
+                        <th style="text-align: center; width: 5px;">Ketua</th>
+                        <th style="text-align: center; width: 5px;">Anggota</th>
+                      </tr>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- ini Semester ganjil -->
+                    <tr>
+                      <td rowspan="2">2022</td>
+                      <td rowspan="2">Ganjil</td>
+                      <td>Adam, Adi</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Adam, Adi</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <!-- /ini Semester ganjil -->
+                    <!-- ini Semester genap -->
+                    <tr>
+                      <td rowspan="2">2022</td>
+                      <td rowspan="2">Ganjil</td>
+                      <td>Adam, Adi</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Adam, Adi</td>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <!-- /ini Semester genap -->
+                  </tbody>
+                </table>
+                </div>
+                <label>File Pendukung</label>
+                  <p class="form-control">Link Google Drive</p>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+
+          <!-- Membina kegiatan kemahasiswaan di bidang akademik dan kemahasiswaan -->
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" style="background-color: yellow;">
+                <h3 class="card-title">6. Membina kegiatan kemahasiswaan di bidang akademik dan kemahasiswaan</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <p>(sebagai dosen wali, sebagai dosen pembimbing organisasi kegiatan mahasiswa, dll)</p>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="width: 20px"></th>
+                      <th style="width: 20px">Tahun Ajar</th>
+                      <th style="width: 20px">Ganjil</th>                          
+                      <th style="width: 10px">Genap</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Sebagai Dosen Pembimbing Akademik</td>
+                      <td>2022</td>
+                      <td>1</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <label>File Pendukung</label>
+                  <p class="form-control">Link Google Drive</p>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" style="background-color: yellow;">
+                <h3 class="card-title">7. Mengembangkan Bahan Kuliah</h3>
+              </div>
+              <!-- ./card-header -->
+              <div class="card-body">
+                <label>Tahun Ajar</label>
+                <p class="form-control col-1">2022</p>
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr data-widget="expandable-table" aria-expanded="false">
+                      <td>
+                        <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                        Ganjil
+                      </td>
+                    </tr>
+                    <tr class="expandable-body">
+                      <td>
+                        <div class="">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th style="width: 20px">Jenis Bahan Kuliah</th>
+                                <th style="width: 20px">Jumlah</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Buku Ajar</td>
+                                <td><p class="form-control">0</p></td>
+                              </tr>
+                              <tr>
+                                <td>Diklat</td>
+                                <td><p class="form-control">0</p></td>
+                              </tr>
+                              <tr>
+                                <td>Modul</td>
+                                <td><p class="form-control">0</p></td>
+                              </tr>
+                              <tr>
+                                <td>Petunjuk Praktikum</td>
+                                <td><p class="form-control">0</p></td>
+                              </tr>
+                              <tr>
+                                <td>Model</td>
+                                <td><p class="form-control">0</p></td>
+                              </tr>
+                              <tr>
+                                <td>Alat Bantu</td>
+                                <td><p class="form-control">0</p></td>
+                              </tr>
+                              <tr>
+                                <td>Audio Visual</td>
+                                <td><p class="form-control">0</p></td>
+                              </tr>
+                              <tr>
+                                <td>Naskah Tutorial</td>
+                                <td><p class="form-control">0</p></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr data-widget="expandable-table" aria-expanded="false">
+                      <td>
+                        <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                        Genap
+                      </td>
+                    </tr>
+                    <tr class="expandable-body">
+                      <td>
+                        <div class="">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr data-widget="expandable-table" aria-expanded="false">
+                                <th style="width: 20px">Jenis Bahan Kuliah</th>
+                                <th style="width: 20px">Jumlah</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Buku Ajar</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Diklat</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Modul</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Petunjuk Praktikum</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Model</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Alat Bantu</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Audio Visual</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Naskah Tutorial</td>
+                                <td>0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <label>File Pendukung</label>
+                  <p class="form-control" name="">Link Google Drive</p>
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="card"  style="background-color: blue;">
+              <div class="card-header">
+                <h4>PELAKSANAAN PENELITIAN</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menghasilkan Karya Ilmiah -->
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header" style="background-color: yellow;">
+                <h3 class="card-title">1. Menghasilkan Karya Ilmiah</h3>
+              </div>
+              <!-- ./card-header -->
+              <div class="card-body">
+                <label>Tahun Ajar</label>
+                <p class="form-control col-1">2022</p>
+                <table class="table table-bordered">
+                  <tbody>
+                    <tr data-widget="expandable-table" aria-expanded="false">
+                      <td>
+                        <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                        Ganjil
+                      </td>
+                    </tr>
+                    <tr class="expandable-body">
+                      <td>
+                        <div class="">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th style="width: 20px">Jenis Karya Ilmiah</th>
+                                <th style="width: 20px">Jumlah</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Monograf</td>                          
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Buku referensi</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Artikel di jurnal ilmiah internasional</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Artikel di jurnal ilmiah nasional terakreditasi</td>                          
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Artikel di jurnal ilmiah nasional</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Makalah disajikan di seminar internasional</td>                          
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Makalah disajikan di seminar nasional</td>                          
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Poster internasional</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Poster nasional</td>                          
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Artikel di majalah/koran</td>
+                                <td>0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr data-widget="expandable-table" aria-expanded="false">
+                      <td>
+                        <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                        Genap
+                      </td>
+                    </tr>
+                    <tr class="expandable-body">
+                      <td>
+                        <div class="">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr data-widget="expandable-table" aria-expanded="false">
+                                <th style="width: 20px">Jenis Bahan Kuliah</th>
+                                <th style="width: 20px">Jumlah</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Monograf</td>                          
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Buku referensi</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Artikel di jurnal ilmiah internasional</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Artikel di jurnal ilmiah nasional terakreditasi</td>                          
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Artikel di jurnal ilmiah nasional</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Makalah disajikan di seminar internasional</td>                          
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Makalah disajikan di seminar nasional</td>                          
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Poster internasional</td>
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Poster nasional</td>                          
+                                <td>0</td>
+                              </tr>
+                              <tr>
+                                <td>Artikel di majalah/koran</td>
+                                <td>0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <label>File Pendukung</label>
+                <p class="form-control" name="">Link Google Drive</p>
+                <br>
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="card"  style="background-color: blue;">
+              <div class="card-header">
+                <h4>PELAKSANAAN PENGABDIAN KEPADA MASYARAKAT</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memberikan pelatihan/penyuluhan/penataran/ceramah pada masyarakat -->
+          <div class=" col-md-12">
+            <div class="card">
+              <div class="card-header" style="background-color: yellow;">
+                <h3 class="card-title">1. Memberikan pelatihan/penyuluhan/penataran/ceramah pada masyarakat</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="width: 20px">Jenis</th>
+                      <th style="width: 20px">Jumlah Program</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th colspan="4">Satu semester atau lebih</th>
+                    </tr>
+                    <tr>
+                      <td>Tingkat internasional</td>                          
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Tingkat nasional</td>                          
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Tingkat lokal</td>                          
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <th colspan="4">Kuran dari 1 semester atau minimal 1 bulan</th>
+                    </tr>
+                    <tr>
+                      <td>Tingkat internasional</td>                          
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Tingkat nasional</td>                          
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>Tingkat lokal</td>                          
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                      <td>Isidental</td>                          
+                      <td>0</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <label>File Pendukung</label>
+                  <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                <br>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+
+          <div class="col-md-12">
+            <div class="card"  style="background-color: blue;">
+              <div class="card-header">
+                <h4>USUR PENUNJANG</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="card ">
+              <div class="card-header" style="background-color: yellow;">
+                <h3 class="card-title">Unsur Penunjang</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <select name="" class="form-control select2 col-md-1">
+                  <option selected="selected">2022</option>
+                  <option>2023</option>
+                  <option>2024</option>                              
+                </select><br>
+                <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th style="width: 2px;">Semester</th>
+                      <th style="text-align: center; width: 40px;">Jabatan Struktural</th>
+                      <th style="text-align: center; width: 20px;">Jumlah</th>
+                      <th style="text-align: center; width:5px;">AK/Sem</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="background-color: #c7c6c1;">Ganjil</td>
+                      <td>Ketua Prodi TRPL</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td style="background-color: #c7c6c1;">Genap</td>
+                      <td>Ketua Prodi TRPL</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+                <label>File Pendukung</label>
+                  <input class="form-control" type="text" placeholder="Link Google Drive" name="">
+                  <br>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+
+        <!-- /.row -->
+      </div><!--/. container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+</body>
+</html>
